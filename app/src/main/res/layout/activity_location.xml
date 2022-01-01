@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".location">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".location">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00018786"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:navigationIcon="@drawable/ic_baseline_menu_24"
+                app:title="Location"
+                app:titleTextColor="@color/white">
+                <!-- navigation button and title for the Toolbar-->
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation = "vertical">
+
+                    <Switch
+                        android:id="@+id/locationSwitch"
+                        android:layout_width="match_parent"
+                        android:text="@string/enable_power_button"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="10dp"
+                        tools:ignore="UseSwitchCompatOrMaterialXml"
+                        android:theme="@style/SwitchTheme" />
+
+                    <fragment
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/map"
+                        tools:context=".location"
+                        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:orientation="horizontal"-->
+<!--                        android:translationY="-60dp">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/LocContactView"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/ic_contacts"-->
+<!--                            android:backgroundTint="@android:color/transparent"/>-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/LocProfileView"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:src="@drawable/ic_profile"-->
+<!--                            android:backgroundTint="@android:color/transparent"/>-->
+
+
+<!--                    </LinearLayout>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@layout/nav_items" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:translationY="-50dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:translationY="-115dp"
+        android:background="@layout/shadow" />
+
+</LinearLayout>
+
+
+
