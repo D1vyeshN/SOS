@@ -2,11 +2,11 @@
 
 It is a android application that will send message of location to contacts that are enable in the contact menu.
 
-1:- Enable the permisson require by the application.
-2:- User have to sign up to the application.
-3:- User have to log in to the account.
-4:- Toggle the contacts to whom the message of location should be sent.
-5:- Enable the power button feature as per requirement.
+1:- Enable the permisson require by the application.<br>
+2:- User have to sign up to the application.<br>
+3:- User have to log in to the account.<br>
+4:- Toggle the contacts to whom the message of location should be sent.<br>
+5:- Enable the power button feature as per requirement.<br>
 
 
 
