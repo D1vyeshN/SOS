@@ -7,6 +7,11 @@ It is a android application that will send message of location to contacts that 
 3:- User have to log in to the account.<br>
 4:- Toggle the contacts to whom the message of location should be sent.<br>
 5:- Enable the power button feature as per requirement.<br>
+6:- In the power button feature there is a count of 3.<br>
+7:- If user press the power button 3 times then a notification comes.<br>
+8:- Notification has two option to send or cancel the sending SOS message of location.<br>
+9:- If user cancel the notification then no message is sent to enable contacts.<br>
+10:- If uesr clicks on the send then a location message is sent to the all contacts that are enable in the contact list in the application.
 
 ## Screenshots
 <table>
